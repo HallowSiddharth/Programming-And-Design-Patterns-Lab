@@ -1,0 +1,8 @@
+Digital Diary Ex-01
+Name: Vishnu Siddharth V R
+3122215002126
+
+Algorithm For Question 1
+1. Start
+2. Create a class called library, with the constructor consisiting of a dictionary called data, with keys as books, cds, magazines and audiobooks
+3. 
