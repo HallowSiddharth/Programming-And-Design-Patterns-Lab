@@ -5,4 +5,9 @@ Name: Vishnu Siddharth V R
 Algorithm For Question 1
 1. Start
 2. Create a class called library, with the constructor consisiting of a dictionary called data, with keys as books, cds, magazines and audiobooks
-3. 
+3. create a function called add, with the type of product to be added as a parameter
+4. if it is a book, add it and sort it wrt dds and book name/isbn
+5. if it is a cd, add it and sort with title
+  if it is an audio book, add and sort by author
+6. If it is a magazine, add it and sort wrt title, volume and issue number
+7. create a way to print all data in it's organized form.
