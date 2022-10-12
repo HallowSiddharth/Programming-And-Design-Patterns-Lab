@@ -10,7 +10,7 @@ class Library:
             author=input("Enter name of author : ")
             isbn=int(input("Enter the ISBN : "))
             dds=int(input("Enter the DDS : "))
-            if dds in self.data["Book"][dds]:
+            if dds in self.data["Book"]:
                 self.data["Book"][dds].append([isbn,upc,book,author,dds])
                 self.data["Book"][dds].sort()
             else:
@@ -22,6 +22,26 @@ class Library:
             self.data["Magazine"].append([upc,name,volume,isno])
         elif type=="CD":
             author=input("Enter the name of the CD : ")
-            self.data["CD"].append()
-            
+            self.data["CD"].append(author)
+            self.data["CD"].sort()
+        elif type=="Audio Book":
+            title=input("Enter name of the author: ")
+            self.data["Audio Book"].append(title)
+            self.data["Audio Book"].sort()
+    
+    def printdata(self):
+        for i in self.data:
+            print(i," : ")
+            for j in self.data[i]:
+                print(j)
+
+obj=Library()
+obj.add("Book")
+obj.add("Book")
+obj.add("CD")
+obj.add("Audio Book")
+obj.add("Magazine")
+obj.add("Magazine")
+obj.printdata()
+
     
